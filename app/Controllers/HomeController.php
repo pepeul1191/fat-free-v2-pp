@@ -25,5 +25,10 @@ class HomeController extends BaseController
     );
     $this->render('home', $locals, 200);
   }
+
+  function list($f3)
+  {
+    echo 'listar';
+  }
 }
 
