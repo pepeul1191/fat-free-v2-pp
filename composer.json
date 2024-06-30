@@ -1,0 +1,17 @@
+{
+    "name": "pepe/fatpp2",
+    "autoload": {
+        "psr-4": {
+            "Pepe\\Fatpp2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pepe Valdivia",
+            "email": "pepe.valdivia.caballero@gmail.com"
+        }
+    ],
+    "require": {
+        "bcosca/fatfree": "^3.7"
+    }
+}

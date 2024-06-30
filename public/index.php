@@ -1,6 +1,6 @@
 <?php
 
-header('"X-Powered-By": "Fat-Free Framework"');
-echo 'hola mundo';
+require '../vendor/autoload.php';
+require '../configs/bootstrap.php';
 
-?>
+$f3->run();
