@@ -6,6 +6,6 @@
 </head>
 <body>
   <h1>{$mensaje}</h1>
-  <p>Esta es una página de inicio utilizando Smarty en Fat-Free Framework.</p>
+  <p>Esta es una página de inicio utilizando Smarty en Fat-Free Framework.</br>{$random}</p>
 </body>
 </html>

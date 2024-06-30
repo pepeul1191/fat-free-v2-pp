@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Libraries\Random;
 
 class HomeController extends BaseController
 {
@@ -22,6 +23,7 @@ class HomeController extends BaseController
     $locals = array(
       'titulo' => 'Página de inicio',
       'mensaje' => '¡Bienvenido a mi aplicación!',
+      'random' => Random::lowerStringNumber(20),
     );
     $this->render('home', $locals, 200);
   }
