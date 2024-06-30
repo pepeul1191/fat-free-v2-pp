@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Filters\BeforeAllFilter;
 
 abstract class BaseController 
 {
@@ -18,7 +19,7 @@ abstract class BaseController
 
   function beforeroute($f3) 
   {
-
+    BeforeAllFilter::before($f3);
   }
 
   function render($template, $locals)
