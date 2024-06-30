@@ -7,6 +7,11 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
   define('DS', '/');
 }
 define('BASE_PATH', dirname(__DIR__));
+// timezone
+date_default_timezone_set('America/Lima');
+// load .env
+$dotenv = \Dotenv\Dotenv::createImmutable(BASE_PATH);
+$dotenv->load();
 // run app
 $f3 = \Base::instance();
 // smarty views

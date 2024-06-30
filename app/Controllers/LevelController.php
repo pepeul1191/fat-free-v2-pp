@@ -24,7 +24,7 @@ class LevelController extends BaseController
       'titulo' => 'Gestión de Niveles',
       'mensaje' => '¡Bienvenido a Gestión de Niveles!',
     );
-    $this->render('home', $locals, 200);
+    $this->render('level/index', $locals, 200);
   }
 
   function fetchAll($f3)
