@@ -2,8 +2,13 @@
     "name": "pepe/fatpp2",
     "autoload": {
         "psr-4": {
-            "Pepe\\Fatpp2\\": "src/"
-        }
+            "App\\": "app/"
+        },
+        "files": [
+        ],
+        "classmap": [
+	        "configs"
+	    ]
     },
     "authors": [
         {

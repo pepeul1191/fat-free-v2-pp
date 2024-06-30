@@ -1,8 +1,11 @@
 <?php
 
 $f3 = \Base::instance();
-$f3->route('GET /',
+
+$f3->route('GET /demo',
   function() {
-    echo 'Hello, world fatfree!';
+    echo 'demo';
   }
 );
+
+require_once 'routes.php';
