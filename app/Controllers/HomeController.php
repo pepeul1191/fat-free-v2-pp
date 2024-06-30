@@ -21,7 +21,7 @@ class HomeController extends BaseController
   function index($f3) 
   {
     $locals = array(
-      //'titulo' => 'Página de inicio',
+      'titulo' => 'Página de inicio',
       'mensaje' => '¡Bienvenido a mi aplicación!',
       'random' => Random::lowerStringNumber(20),
     );
