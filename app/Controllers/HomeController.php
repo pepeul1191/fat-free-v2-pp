@@ -21,11 +21,11 @@ class HomeController extends BaseController
   function index($f3) 
   {
     $locals = array(
-      'titulo' => 'Página de inicio',
+      //'titulo' => 'Página de inicio',
       'mensaje' => '¡Bienvenido a mi aplicación!',
       'random' => Random::lowerStringNumber(20),
     );
-    $this->render('home', $locals, 200);
+    $this->render('home/index', $locals, 200);
   }
 
   function list($f3)

@@ -14,9 +14,9 @@ abstract class BaseController
 
   function loadHelper($helper)
   {
-    
+    include_once BASE_PATH . '/app/Helpers/' . $helper . '_helper.php';
   }
-
+  
   function beforeroute($f3) 
   {
     BeforeAllFilter::before($f3);
