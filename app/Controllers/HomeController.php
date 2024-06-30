@@ -11,7 +11,10 @@ class HomeController
 
   function index($f3) 
   {
-    echo 'hola mundo desde controlador';
+    $smarty = $f3->get('smarty');
+    $smarty->assign('titulo', 'Página de inicio');
+    $smarty->assign('mensaje', '¡Bienvenido a mi aplicación!');
+    echo $smarty->fetch('home.tpl');
   }
 }
 
