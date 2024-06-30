@@ -2,3 +2,4 @@
 /views/cache
 /views/tmp
 .env
+/public/uploads
